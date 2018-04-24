@@ -23,7 +23,6 @@ public class FirebaseRTSearchableItemRepository extends FirebaseRTBaseRepository
   private static FirebaseRTBeanRepository mBeanRepository = null;
   private static FirebaseRTDrinkRepository mDrinkRepository = null;
 
-
   public static FirebaseRTSearchableItemRepository getInstance() {
     if (sInstance == null) {
       sInstance = new FirebaseRTSearchableItemRepository();
@@ -101,6 +100,7 @@ public class FirebaseRTSearchableItemRepository extends FirebaseRTBaseRepository
         callback.onLoaded(results.get(0));
       } else {
         // well shit!
+        Log.d(TAG, itemId + ": Multiple instances found in multiple repositories");
       }
     });
     all.addOnFailureListener(e -> {
