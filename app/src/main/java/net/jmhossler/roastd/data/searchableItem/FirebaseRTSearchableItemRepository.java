@@ -147,7 +147,7 @@ public class FirebaseRTSearchableItemRepository extends FirebaseRTBaseRepository
       }
 
       if (results.size() != ids.size()) {
-        Log.w(TAG, "We didn't get all qwe were looking for...");
+        Log.w(TAG, "We didn't get all we were looking for...");
       }
 
       callback.onSearchableItemsLoaded(results);
