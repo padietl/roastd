@@ -30,7 +30,7 @@ public class PopulateDB {
     }
   }
 
-  public void addItems() throws MalformedURLException {
+  public void addItems() {
 
      long id = 12346844634968L;
 
