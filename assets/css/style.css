@@ -280,7 +280,7 @@ header {
 .team-row .team-card {
   width: calc(100% - 30px);
   background: #fff;
-  min-height: 640px;
+  min-height: 670px;
   float: left;
   padding: 30px;
   margin: 0 15px;
